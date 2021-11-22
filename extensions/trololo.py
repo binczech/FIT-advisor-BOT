@@ -49,6 +49,9 @@ class Trololo(commands.Cog):
         elif (f'<@!{self.bot.user.id}>' in message.content and "medde" in message.content.lower()):
             newMessage = f'{message.author.mention} Medde co?'
             await message.channel.send(newMessage)
+        elif (f'<@!{self.bot.user.id}>' in message.content and "git" in message.content.lower()):
+            newMessage = f'{message.author.mention} Zde mě něco můžete naučit: https://github.com/binczech/FIT-advisor-BOT'
+            await message.channel.send(newMessage)
         elif (f'<@!{self.bot.user.id}>' in message.content):
             newMessage = f'{message.author.mention} {random.choice(stornoMessages)}'
             await message.channel.send(newMessage)
